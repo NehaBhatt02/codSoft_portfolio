@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    background-color:rgb(10, 60, 62);
+    margin:auto;
+
+}
+
+.navbar{
+    width:100%;
+    padding :0.1vw;
+    margin: auto; 
+    background-color: black; 
+    color: white; 
+    display:flex;  
+    position :fixed;
+    justify-content: space-around;  
+    align-items:center; 
+    z-index: 2;
+}
+
+.navbar .logo{
+    margin-left: 0.1vw;
+    font-weight: bolder;
+    font-size: larger;
+    font-family:cursive;
+}
+.navbar ul{
+    display:flex;
+    list-style-type:none;
+}
+.navbar ul li{
+    padding: 2vw;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar ul li a:hover{
+    color:rgb(19, 216, 164);
+    font-size: large;
+
+}
+.home{
+    height:50vw;
+}
+
+.home .home_data{
+    padding-left:5vw;
+    position:relative;
+    top:16vw;
+    width:40%;
+    color:white;
+    font-size: 1.5vw;
+    
+
+}
+.home .home_data h1{
+    color:red;
+    font-size: 4vw;
+}
+
+.home .home_data h2{
+    color:cyan;
+    font-size:3vw;
+}
+.home .image{
+    width:40%;
+    height:60%;
+    position: absolute;
+    right:8vw;
+    top:10vw;
+
+}
+.inner_heading{
+    color:yellow;
+    text-align: center;
+    font-size: 3vw;
+    padding:1vw;
+    margin:1vw;
+}
+#about{
+    background-color: rgb(26, 26, 26);
+}
+#about .about_style{
+    padding:1vw;
+    display:flex;
+    margin:40px;
+    
+}
+#about .about_style .about_content{
+    left:30%;
+   color:white;
+    margin-top: 10vw;
+    padding-left: 5vw;
+    padding-right:3vw;
+}
+#about  .about_style .about_img{
+    margin-left:1vw;
+    padding-left: 0vw;
+    
+
+}
+/* #skills{
+    display:flex;
+    justify-content: space-around; */
+
+/* } */
+
+.skill_topic{
+    color:rgb(151, 44, 74);
+    text-align:center;
+}
+#skills .skills_list{
+    display:flex; 
+    column-gap:1.5vw;
+    margin-top:1vw;
+}
+#skills .skills_list .skill_item{
+    border :2px solid black;
+    color:white;
+    margin-top:2vw;
+    margin-bottom: 4vw;
+    padding:1vw;
+}
+
+#skills .skills_list .skill_item:hover{
+    border:2px solid rgb(152, 72, 86);
+    background-color: rgb(36, 19, 26);
+}
+
+#contact{
+    background-color: rgb(63, 32, 48);
+}
+#contact p{
+    margin:10px;
+    color:white;
+}
+#contact .form{
+    margin: auto;
+    width: 40%;
+    padding: 2vw;
+    background-color: rgb(12, 11, 11);
+    position:relative;
+    text-align: center;
+    
+}
+#contact .form span{
+    margin:1vw;
+    color:white;
+
+}
+#contact .form input{
+    margin:1vw;
+}
+#contact .form button{
+    margin:1vw;
+    position:relative;
+    left:2vw;
+}
+
+#contact .social{
+    background-color: rgba(13, 88, 134, 0.742);
+    width:100%;
+}
+#contact .social ul{
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    padding:2vw;
+}
+#contact .social ul li a{
+    text-decoration: none;
+    color:white;
+}
+#contact .social ul li a:hover{
+    font-size: large;
+    color:black;
+}
+
+footer{
+    text-align:center;
+    background-color: black;
+    color:green;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin-top: 20px;
+    }
+
+    .home .home_data {
+        font-size: 2vw;
+    }
+
+    .home .home_data h1 {
+        font-size: 3.5vw;
+    }
+
+    .home .home_data h2 {
+        font-size: 2.5vw;
+    }
+    
+}
+
